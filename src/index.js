@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,9 +8,14 @@ import reportWebVitals from './reportWebVitals';
 import Jobpage from './scenes/Jobs/jobs';
 
 ReactDOM.render(
+  /*
   <React.StrictMode>
     <Jobpage />
   </React.StrictMode>,
+  */
+  <BrowserRouter>
+    <Jobpage />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
